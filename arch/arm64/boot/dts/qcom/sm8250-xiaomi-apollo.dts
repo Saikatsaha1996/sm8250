@@ -2,6 +2,8 @@
 /*
  */
 
+/dts-v1/;
+
 #include <dt-bindings/regulator/qcom,rpmh-regulator.h>
 #include "sm8250.dtsi"
 #include "pm8150.dtsi"
@@ -10,9 +12,12 @@
 #include "pm8009.dtsi"
 
 / {
+	model = "Xiaomi Mi 10T";
+	compatible = "xiaomi,apollo", "qcom,sm8250";
+	classis-type = "handset";
+
 	qcom,msm-id = <356 0x20001>; /* SM8250 v2.1 */
 	qcom,board-id = <0x10008 0>;
-
 	chosen {
 		#address-cells = <2>;
 		#size-cells = <2>;
